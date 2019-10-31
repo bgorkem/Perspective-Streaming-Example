@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@finos/perspective/dist/umd/perspective.js"></script>
+    <script src="https://unpkg.com/@finos/perspective-viewer/dist/umd/perspective-viewer.js"></script>
+    <script src="https://unpkg.com/@finos/perspective-viewer-hypergrid/dist/umd/perspective-viewer-hypergrid.js"></script>
+    <script src="https://unpkg.com/@finos/perspective-viewer-d3fc/dist/umd/perspective-viewer-d3fc.js"></script>
+    <script src="src/index.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <perspective-viewer
+        row-pivots='["name"]'
+        column-pivots='["client"]'
+        columns='["chg","vol"]'
+      ></perspective-viewer>
+    </div>
+  </body>
+</html>
